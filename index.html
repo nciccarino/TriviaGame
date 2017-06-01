@@ -29,7 +29,7 @@
 	<!-- Entire Layout -->
 	<div class="container">
 		<!-- Header -->
-		<div class="jumbotron">
+		<div class="jumbotron" id="jumbotron">
 			
 			<h1 class="text-center" id="title">Trivia Game!</h1>
 			<h2 class="text-center" id="sub-title">United States Geography</h2>
@@ -40,8 +40,8 @@
 		<!-- Start Area -->
 		<div class="row">
 			
-			<div class="col-lg-12" id="start">
-				<h1 id="startButton">Start</h1>
+			<div class="col-lg-12" id="startArea">
+				<button class="btn btn-default" type="submit" id="startButton">Start</button>
 			</div>
 
 		</div>	
@@ -49,8 +49,8 @@
 		<!-- Start Quiz Container -->
 		<div class="row">
 			<div class="col-lg-12" id="quizArea">
-
-				<h3>Time Remaining: <span id="counter">00:00</span> Seconds</h3> 
+				
+				<h3 id="time">Time Remaining: <span id="counter">00:00</span> Seconds</h3> 
 				<br>
 				<h3>1. Which state does not border Missouri?</h3>
 					<label class="radio-inline">
@@ -136,7 +136,7 @@
 					<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> Alabama
 					</label>
 				<br><br>
-				<h3 id="doneButton">Done</h3>
+				<button class="btn btn-default" type="submit" id="doneButton">Done</button>
 				<br><br>
 
 			</div>

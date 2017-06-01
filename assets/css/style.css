@@ -1,0 +1,50 @@
+body{
+	background: url("../images/background.jpg") no-repeat center center fixed; 
+}
+
+#jumbotron {
+	font-family: 'Modak', cursive;
+	background-color: #a94442; 
+}
+
+#quizArea {
+	background-color: #a94442; 
+	margin: 20px;
+	font-family: 'Modak', cursive;
+}
+
+#finishArea {
+	background-color: #a94442; 
+	margin: 20px;
+	font-family: 'Modak', cursive;
+}
+
+#startButton {
+	background: green;
+	color: black;
+	text-shadow: none; 
+	font-size: 50px; 
+	width: 300px;
+	font-family: 'Modak', cursive;
+}
+
+#startButton:hover {
+	background: #2d6839;
+}
+
+#doneButton {
+	background: green;
+	color: black;
+	text-shadow: none; 
+	font-size: 50px;
+	font-family: 'Modak', cursive;
+}
+
+#doneButton:hover {
+	background: #2d6839;
+}
+
+#time {
+	padding: 10px;
+	font-weight: bold;
+}
