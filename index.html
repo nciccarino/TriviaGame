@@ -26,6 +26,135 @@
 </head>
 <body>
 
+	<!-- Entire Layout -->
+	<div class="container">
+		<!-- Header -->
+		<div class="jumbotron">
+			
+			<h1 class="text-center" id="title">Trivia Game!</h1>
+			<h2 class="text-center" id="sub-title">United States Geography</h2>
+	
+		</div>
+		<!-- End Header -->
+
+		<!-- Start Area -->
+		<div class="row">
+			
+			<div class="col-lg-12" id="start">
+				<h1 id="startButton">Start</h1>
+			</div>
+
+		</div>	
+
+		<!-- Start Quiz Container -->
+		<div class="row">
+			<div class="col-lg-12" id="quizArea">
+
+				<h3>Time Remaining: <span id="counter">00:00</span> Seconds</h3> 
+				<br>
+				<h3>1. Which state does not border Missouri?</h3>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Iowa
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Nebraska
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Kentucky
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> Mississippi
+					</label>
+				<br>
+				<h3>2. What is the state capital of Texas?</h3>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Dallas
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Austin
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Houston
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> San Antonio
+					</label>
+				<br>
+				<h3>3. Which is the smallest state by land area? (not total area)</h3>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Rhode Island
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Delaware
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Hawaii 
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> Connecticut
+					</label>
+				<br>
+				<h3>4. Which State has the northernmost point in the continental United States?</h3>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Minnesota
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Washington
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Maine
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> Michigan
+					</label>
+				<br>
+				<h3>5. Which is the closest country that doesn't border the United States?</h3>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Bahamas
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Cuba
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Russia
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> Dominican Republic
+					</label>
+				<br>
+				<h3>6. Which state has the shortest coastline?</h3>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> New Hampshire
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Rhode Island
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Delaware
+					</label>
+					<label class="radio-inline">
+					<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> Alabama
+					</label>
+				<br><br>
+				<h3 id="doneButton">Done</h3>
+				<br><br>
+
+			</div>
+		</div>
+		<!-- End Game Container -->
+
+		<!-- Finish Screen -->
+		<div class="row">
+			<div class="col-lg-12" id="finishArea">
+				<h3>All Done!</h3>
+				<br><br>
+				<h4 id="correct">Correct Answers: </h4>
+				<h4 id="incorrect">Incorrect Answers: </h4>
+				<h4 id="unanswered">Unanswered: </h4>
+			</div>
+		</div>
+	</div>
+
 <script src= assets/javascript/app.js></script>
 </body>
 </html>
