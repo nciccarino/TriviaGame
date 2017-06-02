@@ -34,14 +34,6 @@
 
 //-----------------End Attempt 1-------------------------------------------------------------------------------
 
-
-function none (){
-  var none = $("input:radio[value=true]:not(:checked)");
-    console.log(none);
-    none = none.length; 
-    $("#unanswered").append(none);
-}
-
 $("#doneButton").on("click", function(){
   var correct = $("input:radio[value=true]:checked");
     console.log(correct);
@@ -51,24 +43,8 @@ $("#doneButton").on("click", function(){
     console.log(incorrect);
     incorrect = incorrect.length;
     $("#wrong").append(incorrect); 
-  none();
+  var none = $("input:radio[value=none]:checked"); 
+    console.log(none);
+    none = none.length;
+    $("#unanswered").append(none);  
 });
-
-
-//   var none = $("input:radio[value=true]:not(:checked)").length;
-
-//   var correct = $("input:radio[value=true]:checked");
-//   var correctAnswer = correct.length
-
-//   var incorrect = $("input:radio[value=false]:checked"); 
-//   var incorrectAnswer = incorrect.length
-
-//   var fix = none - incorrect.length; 
-    
-
-
-// $("#doneButton").on("click", function(){
-//     $("#right").append(correctAnswer);
-//     $("#wrong").append(incorrectAnswer); 
-//     $("#unanswered").append(fix);
-// });

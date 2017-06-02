@@ -50,3 +50,7 @@ body{
 	padding: 10px;
 	font-weight: bold;
 }
+
+#hideButton {
+	display: none; 
+}
