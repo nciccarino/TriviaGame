@@ -11,6 +11,7 @@ body{
 	background-color: #a94442; 
 	margin: 20px;
 	font-family: 'Modak', cursive;
+	display: none;
 }
 
 #finishArea {
@@ -19,6 +20,7 @@ body{
 	font-family: 'Modak', cursive;
 	padding: 10px;
 	text-align: center; 
+	display: none; 
 }
 
 #startButton {

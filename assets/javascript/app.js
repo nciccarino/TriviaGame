@@ -1,50 +1,54 @@
-//---------------Attempt 1---------------------------------------------------------------------------
+//----------------Score Screen---------------------------------------
 
-// //------------Global Variables--------------------------------
+//----------------TimerTimer----------------------------------------------
 
-// var correct = ["Mississippi", "Austin", "RhodeIsland", "Minnesota", "Russia", "NewHampshire"];
+var number = 121; 
 
-// var clicked = []; //need to create a blank spot if left unclicked
+var intervalId;
 
-// //------------Functions---------------------------------------
+$("#startButton").on("click", start); 
 
-// $(document).ready(function(){
+function start(){
+  intervalId = setInterval(decrement, 1000);
+  $("#quizArea").css("display", "block");
+  $("#startButton").css("display", "none");
+}
 
-// //------------Data Gathering----------------------------------
+function decrement() {
+  number--;
+  $("#counter").html("<span>" + number + "</span>"); 
 
-//   $("#doneButton").on("click", function(){
-//     var selected = $("input[type=radio]:checked");
-//     $.each(selected, function(){
-//       clicked[this.id] = this.value;
-//       console.log(this)
-//       console.log(this.value)
-//       var len = correct.length; 
-//       var i = 0;
-//       for (i; i < len; i++) {
-//         if ($.inArray(correct[i], clicked)== -1) {
-//           console.log("incorrect");
-//         } else {
-//           console.log("correct"); 
-//         }
-//       }
-//     })
-//   })
+  if (number === 0) {
+    stop();
 
-// }); //end 
+  }
+}
 
-//-----------------End Attempt 1-------------------------------------------------------------------------------
+function stop() {
+  clearInterval(intervalId); 
+  $("#finishArea").css("display", "block"); 
+  $("#quizArea").css("display", "none");
+  quizDone(); 
+}
 
-$("#doneButton").on("click", function(){
-  var correct = $("input:radio[value=true]:checked");
-    console.log(correct);
-    correct = correct.length;
-    $("#right").append(correct);
-  var incorrect = $("input:radio[value=false]:checked"); 
-    console.log(incorrect);
-    incorrect = incorrect.length;
-    $("#wrong").append(incorrect); 
-  var none = $("input:radio[value=none]:checked"); 
-    console.log(none);
-    none = none.length;
-    $("#unanswered").append(none);  
-});
+//---------------------Quiz------------------------------------------
+
+function quizDone () {
+    var correct = $("input:radio[value=true]:checked");
+      console.log(correct);
+      correct = correct.length;
+      $("#right").append(correct);
+    var incorrect = $("input:radio[value=false]:checked"); 
+      console.log(incorrect);
+      incorrect = incorrect.length;
+      $("#wrong").append(incorrect); 
+    var none = $("input:radio[value=none]:checked"); 
+      console.log(none);
+      none = none.length;
+      $("#unanswered").append(none); 
+
+    $("#finishArea").css("display", "block"); 
+    $("#quizArea").css("display", "none"); 
+  };
+
+$("#doneButton").on("click", quizDone); 
